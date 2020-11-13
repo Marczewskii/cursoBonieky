@@ -10,7 +10,7 @@ let lista = ['Ovo', 'Farinha', 'Corante', 'Massa'];
 
 // lista.shift();
 
-// let res = lista.push('Chocolate');
+let res = lista.push('Chocolate');
 
 
 console.log(lista);
