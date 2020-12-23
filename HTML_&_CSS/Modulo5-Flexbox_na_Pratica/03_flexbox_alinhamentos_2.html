@@ -2,31 +2,39 @@
 <html>
     <head>
         <title>Flexbox</title>
-        <style type="text/css">
-        .container {
-            display: flex;
-            height: 600px;
-            flex-flow: row nowrap;
-            justify-content: flex-end;
-            /* justify-content: space-around; */
-            /* justify-content: flex-start; */
-            /* justify-content: flex-end;  */
-            /* align-items: center;  */
-            /* flex-wrap: wrap; */
-            /* flex-wrap: nowrap; */
-            /* flex-direction: row; */
-            align-items: flex-start;
-            background-color: #DDD;
-        }
+        <style>
+            .container {
+                display: flex;
+                height: 500px;
+                flex-wrap: wrap;
+                flex-direction: row;
+                justify-content: center;
+                align-items: flex-start;
+                background-color: #DDD;
+                /* align-content: space-between; */
+                align-content: space-around;
+            }
 
-        .container div {
-            width: 200px;
-            height: 200px;
-            background-color: #F00;
-            margin: 10px;
-            padding: 10px;
-            font-size: 18px;
-        }
+            .container div {
+                width: 100px;
+                height: 100px;
+                background-color: #F00;
+                margin: 10px;
+                padding: 10px;
+                font-size: 18px;
+            }
+
+            .div10 {
+                /* align-self: flex-end; */
+                /* order: -1; */
+            }
+
+            .div14 {
+                /* order: 1; */
+            }
+
+
+
         </style>
     </head>
     <body>
@@ -35,13 +43,18 @@
             <div>1</div>
             <div>2</div>
             <div>3</div>
-            <!-- <div>4</div>
+            <div>4</div>
             <div>5</div>
             <div>6</div>
             <div>7</div>
             <div>8</div>
             <div>9</div>
-            <div>10</div> -->
+            <div class="div10">10</div>
+            <div>11</div>
+            <div>12</div>
+            <div>13</div>
+            <div class="div14">14</div>
+            <div>15</div>
         </div>
 
     </body>
